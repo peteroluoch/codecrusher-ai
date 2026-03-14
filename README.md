@@ -1,5 +1,10 @@
 # CodeCrusher
 
+![Python](https://img.shields.io/badge/Python-blue)
+![LLM](https://img.shields.io/badge/LLM-systems-purple)
+![Automation](https://img.shields.io/badge/automation-tools-green)
+![Status](https://img.shields.io/badge/status-experimental-orange)
+
 AI-powered developer tool designed to automate code refactoring and developer workflows.
 
 CodeCrusher explores how large language models can assist engineers by analyzing repositories, suggesting refactors, and applying structured code transformations safely.
