@@ -28,10 +28,24 @@ CodeCrusher experiments with using LLMs to automate parts of this process while 
 
 ---
 
+## Example Workflow
+
+Example CLI usage:
+
+```bash
+codecrusher scan ./repository
+codecrusher analyze
+codecrusher apply
+
+Example output
+
+Detected 12 refactor opportunities
+Suggested fixes applied to 8 files
+Confidence score: 92%
+
 ## Architecture Overview
 
 Simplified architecture:
-
 
 CLI / Dashboard
 ↓
