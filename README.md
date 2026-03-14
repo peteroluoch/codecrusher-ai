@@ -43,6 +43,8 @@ Detected 12 refactor opportunities
 Suggested fixes applied to 8 files
 Confidence score: 92%
 
+```
+
 ## Architecture Overview
 
 Simplified architecture:
