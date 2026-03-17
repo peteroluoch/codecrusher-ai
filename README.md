@@ -32,6 +32,12 @@ CodeCrusher experiments with using LLMs to automate parts of this process while 
 
 ---
 
+### Dashboard View
+_(screenshot coming soon)_
+
+### CLI Output
+_(screenshot coming soon)_
+
 ## Example Workflow
 
 Example CLI usage:
