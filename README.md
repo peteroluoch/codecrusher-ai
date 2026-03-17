@@ -15,8 +15,7 @@ CodeCrusher explores how large language models can assist engineers by analyzing
 
 ## Problem
 
-Large repositories often require repetitive refactoring and maintenance tasks.  
-Developers spend significant time updating code patterns, restructuring modules, and fixing repetitive issues.
+Large repositories often require repetitive refactoring and maintenance tasks. Developers spend significant time updating code patterns, restructuring modules, and fixing repetitive issues.
 
 CodeCrusher experiments with using LLMs to automate parts of this process while keeping developers in control.
 
@@ -24,12 +23,12 @@ CodeCrusher experiments with using LLMs to automate parts of this process while 
 
 ## Core Features
 
-- Automated code refactoring suggestions
-- Multi-model routing and fallback logic
+- automated code refactoring suggestions
+- multi-model routing and fallback logic
 - CLI-based workflow for repository scanning
-- Web dashboard for monitoring and logs
-- Prompt scoring and response evaluation
-- Recursive repository scanning
+- web dashboard for monitoring and logs
+- prompt scoring and response evaluation
+- recursive repository scanning
 
 ---
 
@@ -40,32 +39,45 @@ Example CLI usage:
 ```bash
 codecrusher scan ./repository
 codecrusher analyze
-codecrusher apply
+codecrusher apply --preview
+```
 
-Example output
+Example output:
 
+```text
 Detected 12 refactor opportunities
 Suggested fixes applied to 8 files
 Confidence score: 92%
-
 ```
+
+This workflow is designed to keep developers in control by allowing preview and review before applying changes.
+
+---
 
 ## Architecture Overview
 
 Simplified architecture:
 
+```text
+Developer
+  ↓
 CLI / Dashboard
-↓
-API Layer
-↓
-Task Queue
-↓
-LLM Processing
-↓
-Code Analysis + Diff Engine
-↓
+  ↓
+Task Orchestrator
+  ↓
+Model Router
+  ↓
+LLM Providers
+  ↓
+Diff / Validation Layer
+  ↓
 Output Suggestions
+```
 
+More details:
+
+- [Architecture Notes](docs/architecture.md)
+- [Workflow Notes](docs/workflow.md)
 
 ---
 
@@ -88,9 +100,19 @@ It focuses on safe, observable workflows rather than blind code generation.
 
 ---
 
+## Future Exploration
+
+Areas currently being explored:
+
+- LLM-assisted code review
+- automated refactor pull requests
+- integration with CI pipelines
+- prompt evaluation and model routing strategies
+
+---
+
 ## Note
 
 Due to proprietary algorithms and internal tooling, the full implementation remains private.
 
 However, architecture walkthroughs or demos can be shared on request.
-
